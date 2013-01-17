@@ -1,0 +1,34 @@
+---
+abstract: 'Abbreviate Perl namespace'
+author:
+  - 'Stanislaw Pusep <stas@sysd.org>'
+build_requires:
+  D::MD5: 0
+  File::Find: 0
+  File::Temp: 0
+  Test::More: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300029, CPAN::Meta::Converter version 2.120921'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Acme-TLDR
+requires:
+  Digest::MD5: 0
+  ExtUtils::Installed: 0
+  File::HomeDir: 0
+  File::Spec::Functions: 0
+  Filter::Simple: 0
+  Storable: 0
+  perl: 5.008
+  strict: 0
+  utf8: 0
+  warnings: 0
+resources:
+  bugtracker: https://github.com/creaktive/Acme-TLDR/issues
+  homepage: https://github.com/creaktive/Acme-TLDR
+  repository: git://github.com/creaktive/Acme-TLDR.git
+version: 0.001

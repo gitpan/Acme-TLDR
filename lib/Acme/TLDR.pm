@@ -1,5 +1,5 @@
 package Acme::TLDR;
-# ABSTRACT: Abbreviate Perl namespace
+# ABSTRACT: Abbreviate Perl namespaces for the Extreme Perl Golf
 
 
 use strict;
@@ -13,7 +13,7 @@ use File::Spec::Functions;
 use Filter::Simple;
 use Storable;
 
-our $VERSION = '0.001'; # VERSION
+our $VERSION = '0.002'; # VERSION
 
 
 # hack; only absolute paths
@@ -99,11 +99,11 @@ __END__
 
 =head1 NAME
 
-Acme::TLDR - Abbreviate Perl namespace
+Acme::TLDR - Abbreviate Perl namespaces for the Extreme Perl Golf
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 

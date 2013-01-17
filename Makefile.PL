@@ -9,10 +9,9 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Abbreviate Perl namespace",
+  "ABSTRACT" => "Abbreviate Perl namespaces for the Extreme Perl Golf",
   "AUTHOR" => "Stanislaw Pusep <stas\@sysd.org>",
   "BUILD_REQUIRES" => {
-    "D::MD5" => 0,
     "File::Find" => 0,
     "File::Temp" => 0,
     "Test::More" => 0
@@ -35,7 +34,7 @@ my %WriteMakefileArgs = (
     "utf8" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.001",
+  "VERSION" => "0.002",
   "test" => {
     "TESTS" => "t/*.t"
   }

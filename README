@@ -1,8 +1,8 @@
 NAME
-    Acme::TLDR - Abbreviate Perl namespace
+    Acme::TLDR - Abbreviate Perl namespaces for the Extreme Perl Golf
 
 VERSION
-    version 0.001
+    version 0.002
 
 SYNOPSIS
         #!/usr/bin/env perl

@@ -1,6 +1,11 @@
 Changelog for Acme-TLDR
 
-0.001 2013-01-17T14:16:50
+0.002 2013-01-17T14:56:19
+ [Stanislaw Pusep <creaktive@gmail.com>]
+ - oops! Dist::Zilla should not depend on shortened stuff
+
+
+v0.001 2013-01-17T13:35:00
  [Stanislaw Pusep <creaktive@gmail.com>]
  - INIT
 

@@ -1,9 +1,8 @@
 ---
-abstract: 'Abbreviate Perl namespace'
+abstract: 'Abbreviate Perl namespaces for the Extreme Perl Golf'
 author:
   - 'Stanislaw Pusep <stas@sysd.org>'
 build_requires:
-  D::MD5: 0
   File::Find: 0
   File::Temp: 0
   Test::More: 0
@@ -31,4 +30,4 @@ resources:
   bugtracker: https://github.com/creaktive/Acme-TLDR/issues
   homepage: https://github.com/creaktive/Acme-TLDR
   repository: git://github.com/creaktive/Acme-TLDR.git
-version: 0.001
+version: 0.002

@@ -1,12 +1,13 @@
 Changelog for Acme-TLDR
 
-0.002 2013-01-17T14:56:19
- [Stanislaw Pusep <creaktive@gmail.com>]
- - oops! Dist::Zilla should not depend on shortened stuff
+0.003 2014-06-28T16:42:27
+ - Dist::Zilla maintenance (Stanislaw Pusep)
+ - Fixed issue #1 (Stanislaw Pusep)
+ - drop PWP::Encoding dependency (Sergey Romanov)
 
+0.002 2013-01-17T14:55:34
+ - oops! Dist::Zilla should not depend on shortened stuff (Stanislaw Pusep)
 
-v0.001 2013-01-17T13:35:00
- [Stanislaw Pusep <creaktive@gmail.com>]
- - INIT
-
+0.001 2013-01-17T13:35:00
+ - INIT (Stanislaw Pusep)
 

@@ -11,9 +11,10 @@ use ExtUtils::Installed;
 use File::HomeDir;  # the only external dependency
 use File::Spec::Functions;
 use Filter::Simple;
+use List::MoreUtils qw(uniq);
 use Storable;
 
-our $VERSION = '0.002'; # VERSION
+our $VERSION = '0.003'; # VERSION
 
 
 # hack; only absolute paths
@@ -54,7 +55,7 @@ sub _installed {
         @INC
     ) {
         _debug(q(no cache found; generating));
-        $modules = [ ExtUtils::Installed->new->modules ];
+        $modules = [ uniq qw[Digest::MD5] => ExtUtils::Installed->new->modules ];
         store $modules => $cache
             unless exists $ENV{NOCACHE};
     } else {
@@ -95,7 +96,7 @@ __END__
 
 =pod
 
-=encoding utf8
+=encoding UTF-8
 
 =head1 NAME
 
@@ -103,7 +104,7 @@ Acme::TLDR - Abbreviate Perl namespaces for the Extreme Perl Golf
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
@@ -174,7 +175,7 @@ Stanislaw Pusep <stas@sysd.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Stanislaw Pusep.
+This software is copyright (c) 2014 by Stanislaw Pusep.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

@@ -8,13 +8,14 @@ use warnings qw(all);
 
 use Digest::MD5 qw(md5_hex);
 use ExtUtils::Installed;
-use File::HomeDir;  # the only external dependency
+use File::HomeDir;
 use File::Spec::Functions;
 use Filter::Simple;
 use List::MoreUtils qw(uniq);
+use Module::CoreList;
 use Storable;
 
-our $VERSION = '0.003'; # VERSION
+our $VERSION = '0.004'; # VERSION
 
 
 # hack; only absolute paths
@@ -54,8 +55,13 @@ sub _installed {
         map { catfile($_, q(perllocal.pod)) }
         @INC
     ) {
+        ## no critic (ProhibitPackageVars)
         _debug(q(no cache found; generating));
-        $modules = [ uniq qw[Digest::MD5] => ExtUtils::Installed->new->modules ];
+        $modules = [
+            uniq
+                keys %{$Module::CoreList::version{$]}},
+                ExtUtils::Installed->new->modules,
+        ];
         store $modules => $cache
             unless exists $ENV{NOCACHE};
     } else {
@@ -104,7 +110,7 @@ Acme::TLDR - Abbreviate Perl namespaces for the Extreme Perl Golf
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 SYNOPSIS
 
@@ -179,5 +185,9 @@ This software is copyright (c) 2014 by Stanislaw Pusep.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
+
+=head1 CONTRIBUTOR
+
+Sergey Romanov <sromanov-dev@yandex.ru>
 
 =cut

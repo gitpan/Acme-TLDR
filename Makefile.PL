@@ -21,9 +21,10 @@ my %WriteMakefileArgs = (
   "NAME" => "Acme::TLDR",
   "PREREQ_PM" => {
     "File::HomeDir" => 0,
-    "List::MoreUtils" => 0
+    "List::MoreUtils" => 0,
+    "Module::CoreList" => 0
   },
-  "VERSION" => "0.003",
+  "VERSION" => "0.004",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -32,7 +33,8 @@ my %WriteMakefileArgs = (
 
 my %FallbackPrereqs = (
   "File::HomeDir" => 0,
-  "List::MoreUtils" => 0
+  "List::MoreUtils" => 0,
+  "Module::CoreList" => 0
 );
 
 

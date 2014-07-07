@@ -4,7 +4,7 @@ NAME
 
 VERSION
 
-    version 0.003
+    version 0.004
 
 SYNOPSIS
 
@@ -65,4 +65,8 @@ COPYRIGHT AND LICENSE
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.
+
+CONTRIBUTOR
+
+    Sergey Romanov <sromanov-dev@yandex.ru>
 

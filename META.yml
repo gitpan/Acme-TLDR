@@ -16,11 +16,12 @@ name: Acme-TLDR
 requires:
   File::HomeDir: '0'
   List::MoreUtils: '0'
+  Module::CoreList: '0'
   perl: '5.008'
 resources:
   bugtracker: https://github.com/creaktive/Acme-TLDR/issues
   homepage: https://github.com/creaktive/Acme-TLDR
   repository: git://github.com/creaktive/Acme-TLDR.git
-version: '0.003'
+version: '0.004'
 x_contributors:
   - 'Sergey Romanov <sromanov-dev@yandex.ru>'
